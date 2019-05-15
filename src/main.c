@@ -157,7 +157,7 @@ void statemachine_callback(void) {
                    states_get_state_count()); /** Switch to random next state */
 }
 
-int main(int argc, char argv) {
+int main(int argc, char **argv) {
   int error;
 
   srand(time(NULL)); /** Init random numbers */
@@ -175,8 +175,8 @@ int main(int argc, char argv) {
          arguments.verbose ? "yes" : "no", arguments.tick);
 
   /** Initialize state machine */
-  states_add(state_probe, state_two_enter, state_two_run, state_two_ext,
-             state_second_e, SECOND_STATE_NAME);
+  states_add(state_probe, NULL, state_two_run, NULL, state_second_e,
+             SECOND_STATE_NAME);
   states_add(state_probe, NULL, state_three_run, NULL, state_third_e,
              THIRD_STATE_NAME);
   states_add(state_probe, NULL, state_one_run, NULL, state_first_e,
