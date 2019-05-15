@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/DIST/home/lab_espl_stud20/Git_Tutorial/lib/error.h
+
+/DIST/home/lab_espl_stud20/Git_Tutorial/lib/states.c
+error.h
+/DIST/home/lab_espl_stud20/Git_Tutorial/lib/error.h
+states.h
+/DIST/home/lab_espl_stud20/Git_Tutorial/lib/states.h
+stdlib.h
+-
+string.h
+-
+
+/DIST/home/lab_espl_stud20/Git_Tutorial/lib/states.h
+
